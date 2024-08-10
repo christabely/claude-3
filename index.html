@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassintimates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed buttom">
+            <div class="container-fluid justify-content-center">
+                <div class="d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" id="hamburger-menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a class="nav-link" href="#"><i class="fas fa-home"></i></a>
+                    <a class="nav-link" href="#" id="wishlist-icon"><i class="fas fa-heart"></i><span class="badge bg-secondary wishlist-count">0</span></a>
+                    <a class="nav-link" href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i><span class="badge bg-secondary cart-count">0</span></a>
+                    <a class="nav-link" href="#" id="categories-icon"><i class="fas fa-th-large"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <div id="hamburger-sidebar" class="sidebar">
+            <ul class="list-unstyled">
+                <li><a href="#" class="toggle-submenu">Account <span class="toggle-icon">+</span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Create Account</a></li>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Forgot Password</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="toggle-submenu">Lingerie <span class="toggle-icon">+</span></a></li>
+                    <ul class="submenu">
+                      <li><a href="#">Nighties</a></li>
+                      <li><a href="#">Stockings</a></li>
+                      <li><a href="#">Pyjamas</a></li>
+                    </ul>
+                <li><a href="#" class="toggle-submenu">Waist Beads <span class="toggle-icon">+</span></a></li>
+                <li><a href="#" class="toggle-submenu">Toys <span class="toggle-icon">+</span></a></li>
+                <li><a href="#" class="toggle-submenu">Lubricants <span class="toggle-icon">+</span></a></li>
+                <li><a href="#" class="toggle-submenu">Perfumes <span class="toggle-icon">+</span></a></li>
+            </ul>
+        </div>
+
+        <!-- Wishlist Sidebar -->
+        <div id="wishlist-sidebar" class="sidebar">
+            <h3>Wishlist</h3>
+            <ul id="wishlist-items" class="list-unstyled">
+                <!-- Wishlist items will be dynamically added here -->
+            </ul>
+        </div>
+
+        <!-- Cart Sidebar -->
+        <div id="cart-sidebar" class="sidebar">
+            <h3>Shopping Cart</h3>
+            <ul id="cart-items" class="list-unstyled">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <button id="checkout-btn" class="btn btn-primary">Checkout</button>
+        </div>
+
+        <!-- Categories Sidebar -->
+        <div id="categories-sidebar" class="sidebar">
+            <h3>Categories</h3>
+            <ul class="list-unstyled">
+                <li><a href="#" class="toggle-submenu">Nighties <span class="toggle-icon">+</span></a></li>
+                <li><a href="#" class="toggle-submenu">Pyjamas <span class="toggle-icon">+</span></a></li>
+                <li><a href="#" class="toggle-submenu">Classics <span class="toggle-icon">+</span></a></li>
+                <li><a href="#" class="toggle-submenu">Premium <span class="toggle-icon">+</span></a></li>
+                <li><a href="#" class="toggle-submenu">Customised <span class="toggle-icon">+</span></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-black text-white">
+            <div class="container">
+                <h1>Welcome to Our Store</h1>
+                <div class="search-container">
+                    <input type="text" placeholder="Search for products..." class="form-control">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-products" class="bg-pink">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="row">
+                    <!-- Add your product cards here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Add your footer content here -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
